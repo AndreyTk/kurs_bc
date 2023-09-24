@@ -1,5 +1,7 @@
-# kurs_bc
-Kurs BlockChain
+# Курс BlockChain
 
-Ткачук Андрій <BR>
-0xe27e9ed99a55EEf67647262A2B159a7C04346615
+## Ткачук Андрій
+### 0xe27e9ed99a55EEf67647262A2B159a7C04346615
+
+Виконані завдання:
+1. Урок 9 ([less_9.sol](/less_09.sol))
