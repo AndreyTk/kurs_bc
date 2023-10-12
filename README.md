@@ -6,3 +6,7 @@
 Виконані завдання:
 1. Урок 9 ([less_9.sol](/less_09/less_09.sol))
 2. Урок 13 ([less_13](/less_13/index.js))
+
+
+`Remix compilator version - 0.8.17`
+`clear terminal - cls`
