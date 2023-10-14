@@ -20,6 +20,10 @@ abstract contract Animal{
         return keccak256(abi.encodePacked(str1)) == keccak256(abi.encodePacked(str2));
     }
 
+    function sleep() virtual view public returns (string memory){
+        return "Z-z-z...";
+    }
+
 }
 
 abstract contract Herbivore is Animal{
@@ -45,7 +49,7 @@ abstract contract Omnivore is Animal{
         if (Animal.compare(_food, "plant") || Animal.compare(_food, "meat")){
             return string.concat("Non-nom ", _food);
         }
-        revert(string.concat("Carnivore cannot eat ", _food));
+        revert(string.concat("Omnivore cannot eat ", _food));
     }
 }
 
@@ -102,7 +106,7 @@ contract Pig is Omnivore{
 
 contract Farmer {
 
-    address[] public animals;
+    address[] animals;
 
     function addAnimal(address animalAddress) public {
         animals.push(animalAddress);
@@ -126,5 +130,9 @@ contract Farmer {
 
     function callByAddress(address animal) view public returns(string memory){
         return Animal(animal).speak();
+    }
+
+    function getAnimalsCount() view public returns (uint){
+        return animals.length;
     }
 }
