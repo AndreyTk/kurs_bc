@@ -9,37 +9,39 @@
 3. Урок 14 ([less_14](/less_14))
 4. Урок 15 ([less_14](/less_14))
 5. Урок 16 ([less_16](/less_16))
+6. Урок 17 ([less_16](/less_16))
+7. Урок 18 ([less_16](/less_16))
 
 ### Tips
-`Remix compilator version - 0.8.17`
+`Remix compilator version - 0.8.17, London`
 
 `clear terminal - cls`
 
-`console.log('\x1b[36m%s\x1b[0m', 'I am cyan');  //cyan`
-`Reset = "\x1b[0m"`
-`Bright = "\x1b[1m"`
-`Dim = "\x1b[2m"`
-`Underscore = "\x1b[4m"`
-`Blink = "\x1b[5m"`
-`Reverse = "\x1b[7m"`
-`Hidden = "\x1b[8m"`
+`console.log('\x1b[36m%s\x1b[0m', 'I am cyan');  //cyan`<br>
+`Reset = "\x1b[0m"`<br>
+`Bright = "\x1b[1m"`<br>
+`Dim = "\x1b[2m"`<br>
+`Underscore = "\x1b[4m"`<br>
+`Blink = "\x1b[5m"`<br>
+`Reverse = "\x1b[7m"`<br>
+`Hidden = "\x1b[8m"`<br>
 
-`FgBlack = "\x1b[30m"`
-`FgRed = "\x1b[31m"`
-`FgGreen = "\x1b[32m"`
-`FgYellow = "\x1b[33m"`
-`FgBlue = "\x1b[34m"`
-`FgMagenta = "\x1b[35m"`
-`FgCyan = "\x1b[36m"`
-`FgWhite = "\x1b[37m"`
-`FgGray = "\x1b[90m"`
+`FgBlack = "\x1b[30m"`<br>
+`FgRed = "\x1b[31m"`<br>
+`FgGreen = "\x1b[32m"`<br>
+`FgYellow = "\x1b[33m"`<br>
+`FgBlue = "\x1b[34m"`<br>
+`FgMagenta = "\x1b[35m"`<br>
+`FgCyan = "\x1b[36m"`<br>
+`FgWhite = "\x1b[37m"`<br>
+`FgGray = "\x1b[90m"`<br>
 
-`BgBlack = "\x1b[40m"`
-`BgRed = "\x1b[41m"`
-`BgGreen = "\x1b[42m"`
-`BgYellow = "\x1b[43m"`
-`BgBlue = "\x1b[44m"`
-`BgMagenta = "\x1b[45m"`
-`BgCyan = "\x1b[46m"`
-`BgWhite = "\x1b[47m"`
-`BgGray = "\x1b[100m"`
+`BgBlack = "\x1b[40m"`<br>
+`BgRed = "\x1b[41m"`<br>
+`BgGreen = "\x1b[42m"`<br>
+`BgYellow = "\x1b[43m"`<br>
+`BgBlue = "\x1b[44m"`<br>
+`BgMagenta = "\x1b[45m"`<br>
+`BgCyan = "\x1b[46m"`<br>
+`BgWhite = "\x1b[47m"`<br>
+`BgGray = "\x1b[100m"`<br>
