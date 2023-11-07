@@ -107,27 +107,17 @@ module.exports = {
   compilers: {
     solc: {
       version: "0.8.21",      // Fetch exact version from solc-bin (default: truffle's version)
-      docker: false,        // Use "0.5.1" you've installed locally with docker (default: false)
-      settings: {          // See the solidity docs for advice about optimization and evmVersion
-       optimizer: {
-         enabled: true,
-         runs: 200
-       },
-       evmVersion: "byzantium"
-      }
+      // docker: true,        // Use "0.5.1" you've installed locally with docker (default: false)
+      // settings: {          // See the solidity docs for advice about optimization and evmVersion
+      //  optimizer: {
+      //    enabled: false,
+      //    runs: 200
+      //  },
+      //  evmVersion: "byzantium"
+      // }
     }
   },
-/*    sepolia: {
-        provider: function() {
-            return new HDWalletProvider(
-          ‘Privatekey, // Приватний ключ вашого гаманця
-                'https://ethereum-sepolia.publicnode.com  ' // Адреса вузла RPC мережі Sepolia
-        );
-        },
-        network_id: 11155111, // ID мережі Sepolia
-        gas: 4465030, // Ліміт газу
-    },
-},*/
+
   // Truffle DB is currently disabled by default; to enable it, change enabled:
   // false to enabled: true. The default storage location can also be
   // overridden by specifying the adapter settings, as shown in the commented code below.
