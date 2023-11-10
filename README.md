@@ -11,6 +11,7 @@
 5. Урок 16 ([less_16](/less_16))
 6. Урок 17 ([less_16](/less_16))
 7. Урок 18 ([less_16](/less_16))
+8. Урок 19 ([less_19](/less_19))
 
 ### Tips
 `Remix compilator version - 0.8.17, London`
