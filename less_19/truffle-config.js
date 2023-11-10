@@ -41,10 +41,11 @@
  * https://trufflesuite.com/docs/truffle/getting-started/using-the-truffle-dashboard/
  */
 
-// require('dotenv').config();
+ require('dotenv').config();
 // const { MNEMONIC, PROJECT_ID } = process.env;
 
-// const HDWalletProvider = require('@truffle/hdwallet-provider');
+const HDWalletProvider = require('@truffle/hdwallet-provider');
+const { INFURA_API_KEY, MNEMONIC } = process.env;
 
 module.exports = {
   /**
@@ -69,6 +70,11 @@ module.exports = {
      port: 7545,            // Standard Ethereum port (default: none)
      network_id: "*",       // Any network (default: none)
     },
+  sepolia: {
+      provider: () => new HDWalletProvider(MNEMONIC, INFURA_API_KEY),
+      network_id: "11155111",
+      gas: 4465030,
+  },
     //
     // An additional network, but with some advanced options…
     // advanced: {
@@ -106,14 +112,15 @@ module.exports = {
   // Configure your compilers
   compilers: {
     solc: {
-      version: "0.8.21",      // Fetch exact version from solc-bin (default: truffle's version)
+      version: "0.8.20",      // Fetch exact version from solc-bin (default: truffle's version)
+      //  version: "0.5.1",
       // docker: true,        // Use "0.5.1" you've installed locally with docker (default: false)
       // settings: {          // See the solidity docs for advice about optimization and evmVersion
       //  optimizer: {
       //    enabled: false,
       //    runs: 200
       //  },
-      //  evmVersion: "byzantium"
+        evmVersion: "london"
       // }
     }
   },

@@ -1,12 +1,6 @@
-module.exports = async (deployer)=>{
-    let contract = artifacts.require("ANTToken");
-    let result = null;
-    try{
-        result = await contract.deployed();
-    }catch(e){
-        await deployer.deploy(contract);
-        result = await contract.deployed();
+module.exports = async (deployer, network, accounts)=>{
+    let token = artifacts.require("ANTToken");
 
-        console.log('\x1b[36m%s\x1b[0m', "Contract created");
-    }
+    await deployer.deploy(token, {overwrite: false});
+    //token = await token.deployed();
 }

@@ -34,9 +34,12 @@ contract ANTToken is ERC20Burnable, Ownable, ERC20Capped{
 }
 
 contract ANTTokenVesting is VestingWallet {
-    address beneficiary = 0x76594609F9b5858e6E53c3E5D18b76863dDF8FD3;
+    /*address beneficiary = 0x76594609F9b5858e6E53c3E5D18b76863dDF8FD3;
     uint64 startTimestamp = uint64(block.timestamp);
-    uint64 durationSeconds = uint64(60*60*24*30*7);
+    uint64 durationSeconds = uint64(60*60*24*30*7);*/
+    address beneficiary;
+    uint64 startTimestamp;
+    uint64 durationSeconds;
 
     constructor() VestingWallet(beneficiary, startTimestamp, durationSeconds){
 
