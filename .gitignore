@@ -3,4 +3,5 @@ artifacts
 build
 .env
 .idea
+.deps
 package-lock.json
