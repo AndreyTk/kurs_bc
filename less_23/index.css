@@ -1,0 +1,81 @@
+.flexRow{
+    display: flex;
+    flex-direction: row;
+}
+@media (max-width:768px){
+    .flexRow{
+        flex-direction: column;
+    }
+}
+
+.menuItem{
+    margin-left: 20px;
+    font-family: 'Bad Script', cursive;
+}
+
+#mainBlock, #aboutBlock{
+    margin-top: 20px;
+    border: 2px solid black;
+}
+#mainBlock div:nth-child(2)/*, #aboutBlock div:nth-child(2)*/ {
+    margin-left: 16px;
+    margin-right: 16px;
+}
+@media (max-width:960px){
+    #mainBlock div:nth-child(2)/*, #aboutBlock div:nth-child(2)*/ {
+        margin-left: 0px;
+        margin-right: 0px;
+    }
+}
+
+#mainBlock .firstBlock{
+    background: aquamarine;
+}
+#mainBlock .secondBlock{
+    background: rgb(169, 186, 116);
+}
+#mainBlock .thirdBlock{
+    background: #6176bf;
+    color: #992121;
+}
+
+.firstBlock, .secondBlock, .thirdBlock{
+    height: 100px;
+}
+#mainBlock .firstBlock, #mainBlock .secondBlock, #mainBlock .thirdBlock{
+    flex-grow: 1;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+#aboutBlock .firstBlock, #aboutBlock .secondBlock, #aboutBlock .thirdBlock {
+    display: grid;
+    justify-content: center;
+    align-items: center;
+}
+
+.grid{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-gap: 16px;
+}
+
+#aboutBlock .firstBlock{
+    background: antiquewhite;
+}
+#aboutBlock .secondBlock{
+    background: rgb(80, 99, 13);
+}
+#aboutBlock .thirdBlock{
+    background: #636679;
+    color: #342121;
+}
+
+#contactBlock {
+    display: flex;
+    flex-direction: column;
+    padding-top: 20px;
+    max-width: 500px;
+    margin: auto;
+}
