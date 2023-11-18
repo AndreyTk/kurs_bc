@@ -1,0 +1,11 @@
+#searchBlock{
+    display: flex;
+    justify-content: center;
+}
+
+#searchBlock div{
+    margin-top: 20px;
+    padding: 10px;
+    border: 1px darkblue solid;
+    border-radius: 15px;
+}

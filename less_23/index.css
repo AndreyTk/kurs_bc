@@ -21,7 +21,7 @@
     margin-left: 16px;
     margin-right: 16px;
 }
-@media (max-width:960px){
+@media (max-width:768px){
     #mainBlock div:nth-child(2)/*, #aboutBlock div:nth-child(2)*/ {
         margin-left: 0px;
         margin-right: 0px;
